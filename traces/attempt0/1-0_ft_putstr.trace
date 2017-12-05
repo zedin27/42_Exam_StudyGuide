@@ -1,0 +1,58 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r8p13.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Sun Nov 12 22:09:19 PST 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/c-exam-alone-in-the-dark-beginner/practice-exam_20171113/ztisnes
+
+= Git history ==================================================================
+$> git -C /var/folders/26/89jz64hx4gb4bd38xmpqgl4h0000gp/T/tmpqVhw1d/user log --pretty='%H - %an, %ad : %s'
+66eff5414aba825fa343e0b3d86d7bc7c1964915 - zedin27, Sun Nov 12 22:08:27 2017 -0800 : :))
+f9c851649995950bd26cbd449a5dfc69b84153a0 - zedin27, Sun Nov 12 21:59:21 2017 -0800 : :)
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/26/89jz64hx4gb4bd38xmpqgl4h0000gp/T/tmpqVhw1d/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  444 Nov 12 22:09 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Nov 12 22:09 ft_countdown
+drwxr-xr-x  3 deepthought  deepthought  102 Nov 12 22:09 ft_putstr
+
+/var/folders/26/89jz64hx4gb4bd38xmpqgl4h0000gp/T/tmpqVhw1d/user/ft_countdown:
+total 8
+-rw-r--r--  1 deepthought  deepthought  972 Nov 12 22:09 ft_countdown.c
+
+/var/folders/26/89jz64hx4gb4bd38xmpqgl4h0000gp/T/tmpqVhw1d/user/ft_putstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  172 Nov 12 22:09 ft_putstr.c
+ 
+= ft_putstr ====================================================================
+$> gcc -Wextra -Wall -Werror main.c ft_putstr.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./tanw6q8zahcfls8rpzbln2ip "mFC"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+--- user_output_test1	2017-11-12 22:09:21.000000000 -0800$
++++ test1.output	2017-11-12 22:09:21.000000000 -0800$
+@@ -0,0 +1 @@$
++mFC$
+\ No newline at end of file$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================

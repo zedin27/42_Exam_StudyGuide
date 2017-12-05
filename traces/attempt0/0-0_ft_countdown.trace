@@ -1,0 +1,47 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r2p49.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Sun Nov 12 21:59:34 PST 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/c-exam-alone-in-the-dark-beginner/practice-exam_20171113/ztisnes
+
+= Git history ==================================================================
+$> git -C /var/folders/6f/qp92m3795hb9kk1cksbb6r9r0000gp/T/tmp7mYcxN/user log --pretty='%H - %an, %ad : %s'
+f9c851649995950bd26cbd449a5dfc69b84153a0 - zedin27, Sun Nov 12 21:59:21 2017 -0800 : :)
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/6f/qp92m3795hb9kk1cksbb6r9r0000gp/T/tmp7mYcxN/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  226 Nov 12 21:59 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Nov 12 21:59 ft_countdown
+
+/var/folders/6f/qp92m3795hb9kk1cksbb6r9r0000gp/T/tmp7mYcxN/user/ft_countdown:
+total 8
+-rw-r--r--  1 deepthought  deepthought  972 Nov 12 21:59 ft_countdown.c
+ 
+= ft_countdown =================================================================
+$> gcc -Wextra -Wall -Werror ft_countdown.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./pbwlihid171i7w6n6rkllf50
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================
