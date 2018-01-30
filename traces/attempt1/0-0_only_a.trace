@@ -1,0 +1,29 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z4r16p3.42.us.org
+Darwin 17.0.0 x86_64
+$> date
+Mon Jan 29 15:58:34 PST 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.35)
+Target: x86_64-apple-darwin17.0.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.35)
+Target: x86_64-apple-darwin17.0.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/c-exam-alone-in-the-dark-beginner/practice-exam_20180129/ztisnes
+= Collected files ==========================================
+$> ls -lAR /var/folders/yl/jc26jr6563ggzh27k824nnc00000gp/T/tmpF6gbLF/user
+ 
+= only_a =======================================================================
+Nothing turned in
+Grade: 0
+
+= Final grade: 0 ===============================================================
