@@ -6,11 +6,11 @@
 /*   By: ztisnes <ztisnes@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/11 17:15:16 by ztisnes           #+#    #+#             */
-/*   Updated: 2018/01/11 20:52:18 by ztisnes          ###   ########.fr       */
+/*   Updated: 2018/01/12 14:03:37 by ztisnes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//TODO: init(), push(), pop(), isEmpty(), peek()
+//TODO: isEmpty(), peek()
 
 typedef struct		s_node
 {
@@ -40,4 +40,18 @@ void 				push(t_stack *stack, void *content)
 	newNode->content = content;
 	newNode->next = stack->top;
 	stack->top = newNode;
+}
+
+t_stack				*pop(t_stack *stack)
+{
+	t_node			*newNode;
+	void			*content;
+
+	if (stack->top == NULL)
+		return (NULL);
+	newNode = stack->top->next;
+	content = stack->top->content;
+	free(stack->top);
+	newNode = stack->top;
+	return (newNode);
 }
