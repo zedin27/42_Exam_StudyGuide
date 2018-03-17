@@ -1,0 +1,592 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r3p17.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Fri Mar 16 17:32:14 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/c-exam-alone-in-the-dark-beginner/practice-exam_20180316/ztisnes
+
+= Git history ==================================================================
+$> git -C /var/folders/97/qpsq8lcx3kxdx6wbrznc5n600000gp/T/tmpA5BhBY/user log --pretty='%H - %an, %ad : %s'
+747bd4f950c87511885450f67a146ee8eb13eb46 - zedin27, Fri Mar 16 17:32:08 2018 -0700 : 25536msg
+0a137be8a98092d6cfe724832a083c5080fee0c7 - zedin27, Fri Mar 16 17:25:43 2018 -0700 : 25595msg
+3c36df83a7a349b362906356f47e9f59a0dadc90 - zedin27, Fri Mar 16 17:25:32 2018 -0700 : 25595msg
+4b28074fb6e800c9b971179f79a4eee7a78f657b - zedin27, Fri Mar 16 16:53:23 2018 -0700 : 25595msg
+779ad5e439777133a2a82ef173a26b53ade04b62 - zedin27, Fri Mar 16 16:53:16 2018 -0700 : 25595msg
+98bf07d4d36e21b45e78535180fd7ff05097de15 - zedin27, Fri Mar 16 16:32:16 2018 -0700 : 25536msg
+f205cf62f4fac5873c77f7355729681d6155d799 - zedin27, Fri Mar 16 16:32:05 2018 -0700 : 25536msg
+fa03d967a72e06230ad70ce27cccdfa291a88638 - zedin27, Fri Mar 16 15:50:14 2018 -0700 : 25536msg
+9eaaf97becc6d15bdeb22faba806b21b91c588f2 - zedin27, Fri Mar 16 15:33:37 2018 -0700 : 25536msg
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/97/qpsq8lcx3kxdx6wbrznc5n600000gp/T/tmpA5BhBY/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  2218 Mar 16 17:32 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Mar 16 17:32 ft_strcpy
+drwxr-xr-x  3 deepthought  deepthought   102 Mar 16 17:32 ft_strrev
+drwxr-xr-x  3 deepthought  deepthought   102 Mar 16 17:32 last_word
+drwxr-xr-x  3 deepthought  deepthought   102 Mar 16 17:32 maff_revalpha
+drwxr-xr-x  3 deepthought  deepthought   102 Mar 16 17:32 rotone
+drwxr-xr-x  3 deepthought  deepthought   102 Mar 16 17:32 swap_bits
+
+/var/folders/97/qpsq8lcx3kxdx6wbrznc5n600000gp/T/tmpA5BhBY/user/ft_strcpy:
+total 8
+-rw-r--r--  1 deepthought  deepthought  144 Mar 16 17:32 ft_strcpy.c
+
+/var/folders/97/qpsq8lcx3kxdx6wbrznc5n600000gp/T/tmpA5BhBY/user/ft_strrev:
+total 8
+-rw-r--r--  1 deepthought  deepthought  237 Mar 16 17:32 ft_strrev.c
+
+/var/folders/97/qpsq8lcx3kxdx6wbrznc5n600000gp/T/tmpA5BhBY/user/last_word:
+total 8
+-rw-r--r--  1 deepthought  deepthought  385 Mar 16 17:32 last_word.c
+
+/var/folders/97/qpsq8lcx3kxdx6wbrznc5n600000gp/T/tmpA5BhBY/user/maff_revalpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  223 Mar 16 17:32 maff_revalpha.c
+
+/var/folders/97/qpsq8lcx3kxdx6wbrznc5n600000gp/T/tmpA5BhBY/user/rotone:
+total 8
+-rw-r--r--  1 deepthought  deepthought  499 Mar 16 17:32 rotone.c
+
+/var/folders/97/qpsq8lcx3kxdx6wbrznc5n600000gp/T/tmpA5BhBY/user/swap_bits:
+total 8
+-rw-r--r--  1 deepthought  deepthought  85 Mar 16 17:32 swap_bits.c
+ 
+= swap_bits ====================================================================
+$> gcc -Wextra -Wall -Werror main.c swap_bits.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./rm65mk3tlforg0kyxw8saer6
+$> diff -U 3 user_output_test1 test1.output | cat -e
+--- user_output_test1	2018-03-16 17:32:15.000000000 -0700$
++++ test1.output	2018-03-16 17:32:15.000000000 -0700$
+@@ -1,255 +1,255 @@$
+ 0$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
+-1$
++16$
++32$
++48$
++64$
++80$
++96$
++112$
++128$
++144$
++160$
++176$
++192$
++208$
++224$
++240$
++1$
++17$
++33$
++49$
++65$
++81$
++97$
++113$
++129$
++145$
++161$
++177$
++193$
++209$
++225$
++241$
++2$
++18$
++34$
++50$
++66$
++82$
++98$
++114$
++130$
++146$
++162$
++178$
++194$
++210$
++226$
++242$
++3$
++19$
++35$
++51$
++67$
++83$
++99$
++115$
++131$
++147$
++163$
++179$
++195$
++211$
++227$
++243$
++4$
++20$
++36$
++52$
++68$
++84$
++100$
++116$
++132$
++148$
++164$
++180$
++196$
++212$
++228$
++244$
++5$
++21$
++37$
++53$
++69$
++85$
++101$
++117$
++133$
++149$
++165$
++181$
++197$
++213$
++229$
++245$
++6$
++22$
++38$
++54$
++70$
++86$
++102$
++118$
++134$
++150$
++166$
++182$
++198$
++214$
++230$
++246$
++7$
++23$
++39$
++55$
++71$
++87$
++103$
++119$
++135$
++151$
++167$
++183$
++199$
++215$
++231$
++247$
++8$
++24$
++40$
++56$
++72$
++88$
++104$
++120$
++136$
++152$
++168$
++184$
++200$
++216$
++232$
++248$
++9$
++25$
++41$
++57$
++73$
++89$
++105$
++121$
++137$
++153$
++169$
++185$
++201$
++217$
++233$
++249$
++10$
++26$
++42$
++58$
++74$
++90$
++106$
++122$
++138$
++154$
++170$
++186$
++202$
++218$
++234$
++250$
++11$
++27$
++43$
++59$
++75$
++91$
++107$
++123$
++139$
++155$
++171$
++187$
++203$
++219$
++235$
++251$
++12$
++28$
++44$
++60$
++76$
++92$
++108$
++124$
++140$
++156$
++172$
++188$
++204$
++220$
++236$
++252$
++13$
++29$
++45$
++61$
++77$
++93$
++109$
++125$
++141$
++157$
++173$
++189$
++205$
++221$
++237$
++253$
++14$
++30$
++46$
++62$
++78$
++94$
++110$
++126$
++142$
++158$
++174$
++190$
++206$
++222$
++238$
++254$
++15$
++31$
++47$
++63$
++79$
++95$
++111$
++127$
++143$
++159$
++175$
++191$
++207$
++223$
++239$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================

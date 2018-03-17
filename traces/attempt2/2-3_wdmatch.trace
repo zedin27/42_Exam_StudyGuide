@@ -1,0 +1,112 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r4p9.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Fri Mar 16 17:47:51 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/c-exam-alone-in-the-dark-beginner/practice-exam_20180316/ztisnes
+
+= Git history ==================================================================
+$> git -C /var/folders/xw/cgt1vp155td5fb8085c4ps8m0000gp/T/tmpSfuGjd/user log --pretty='%H - %an, %ad : %s'
+e42328b8b37b4fb83e0a7961d29f0d2f0eedc73c - zedin27, Fri Mar 16 17:47:44 2018 -0700 : 25536msg
+2316563503247cf0af14911e796ed52a2148e2ae - zedin27, Fri Mar 16 17:47:27 2018 -0700 : 25536msg
+747bd4f950c87511885450f67a146ee8eb13eb46 - zedin27, Fri Mar 16 17:32:08 2018 -0700 : 25536msg
+0a137be8a98092d6cfe724832a083c5080fee0c7 - zedin27, Fri Mar 16 17:25:43 2018 -0700 : 25595msg
+3c36df83a7a349b362906356f47e9f59a0dadc90 - zedin27, Fri Mar 16 17:25:32 2018 -0700 : 25595msg
+4b28074fb6e800c9b971179f79a4eee7a78f657b - zedin27, Fri Mar 16 16:53:23 2018 -0700 : 25595msg
+779ad5e439777133a2a82ef173a26b53ade04b62 - zedin27, Fri Mar 16 16:53:16 2018 -0700 : 25595msg
+98bf07d4d36e21b45e78535180fd7ff05097de15 - zedin27, Fri Mar 16 16:32:16 2018 -0700 : 25536msg
+f205cf62f4fac5873c77f7355729681d6155d799 - zedin27, Fri Mar 16 16:32:05 2018 -0700 : 25536msg
+fa03d967a72e06230ad70ce27cccdfa291a88638 - zedin27, Fri Mar 16 15:50:14 2018 -0700 : 25536msg
+9eaaf97becc6d15bdeb22faba806b21b91c588f2 - zedin27, Fri Mar 16 15:33:37 2018 -0700 : 25536msg
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/xw/cgt1vp155td5fb8085c4ps8m0000gp/T/tmpSfuGjd/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  2791 Mar 16 17:47 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Mar 16 17:47 ft_strcpy
+drwxr-xr-x  3 deepthought  deepthought   102 Mar 16 17:47 ft_strrev
+drwxr-xr-x  3 deepthought  deepthought   102 Mar 16 17:47 last_word
+drwxr-xr-x  3 deepthought  deepthought   102 Mar 16 17:47 maff_revalpha
+drwxr-xr-x  3 deepthought  deepthought   102 Mar 16 17:47 rotone
+drwxr-xr-x  3 deepthought  deepthought   102 Mar 16 17:47 swap_bits
+drwxr-xr-x  3 deepthought  deepthought   102 Mar 16 17:47 wdmatch
+
+/var/folders/xw/cgt1vp155td5fb8085c4ps8m0000gp/T/tmpSfuGjd/user/ft_strcpy:
+total 8
+-rw-r--r--  1 deepthought  deepthought  144 Mar 16 17:47 ft_strcpy.c
+
+/var/folders/xw/cgt1vp155td5fb8085c4ps8m0000gp/T/tmpSfuGjd/user/ft_strrev:
+total 8
+-rw-r--r--  1 deepthought  deepthought  237 Mar 16 17:47 ft_strrev.c
+
+/var/folders/xw/cgt1vp155td5fb8085c4ps8m0000gp/T/tmpSfuGjd/user/last_word:
+total 8
+-rw-r--r--  1 deepthought  deepthought  388 Mar 16 17:47 last_word.c
+
+/var/folders/xw/cgt1vp155td5fb8085c4ps8m0000gp/T/tmpSfuGjd/user/maff_revalpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  223 Mar 16 17:47 maff_revalpha.c
+
+/var/folders/xw/cgt1vp155td5fb8085c4ps8m0000gp/T/tmpSfuGjd/user/rotone:
+total 8
+-rw-r--r--  1 deepthought  deepthought  499 Mar 16 17:47 rotone.c
+
+/var/folders/xw/cgt1vp155td5fb8085c4ps8m0000gp/T/tmpSfuGjd/user/swap_bits:
+total 8
+-rw-r--r--  1 deepthought  deepthought  85 Mar 16 17:47 swap_bits.c
+
+/var/folders/xw/cgt1vp155td5fb8085c4ps8m0000gp/T/tmpSfuGjd/user/wdmatch:
+total 8
+-rw-r--r--  1 deepthought  deepthought  472 Mar 16 17:47 wdmatch.c
+ 
+= wdmatch ======================================================================
+$> gcc -Wextra -Wall -Werror wdmatch.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./e3i6nsnmud65lzypjf90ryv4 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./2x0jl775i51n4s2cahvvb7kv "salut a tous tout le monde"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./nuut3zyauq7pzfu371a5wazz "salut" "a" "tous" "tout" "le" "monde"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./8zdyc47jrk7jait5t8bfjba6 "llo" "helllo"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./4a00c81qyuzvzyil4ab99gee "LXWO6" "iE9rf0JlWawTOYBoAZt9"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+--- user_output_test5	2018-03-16 17:47:52.000000000 -0700$
++++ test5.output	2018-03-16 17:47:52.000000000 -0700$
+@@ -1 +1 @@$
+-LXWO6$
++$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================

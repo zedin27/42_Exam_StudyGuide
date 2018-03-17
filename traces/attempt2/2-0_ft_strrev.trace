@@ -1,0 +1,63 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z4r4p12.42.us.org
+Darwin 17.0.0 x86_64
+$> date
+Fri Mar 16 16:53:42 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.35)
+Target: x86_64-apple-darwin17.0.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.35)
+Target: x86_64-apple-darwin17.0.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/c-exam-alone-in-the-dark-beginner/practice-exam_20180316/ztisnes
+
+= Git history ==================================================================
+$> git -C /var/folders/q_/kl4s3bqx1gj3h7gyk4180hdr0000gp/T/tmpc8RAVa/user log --pretty='%H - %an, %ad : %s'
+4b28074fb6e800c9b971179f79a4eee7a78f657b - zedin27, Fri Mar 16 16:53:23 2018 -0700 : 25595msg
+779ad5e439777133a2a82ef173a26b53ade04b62 - zedin27, Fri Mar 16 16:53:16 2018 -0700 : 25595msg
+98bf07d4d36e21b45e78535180fd7ff05097de15 - zedin27, Fri Mar 16 16:32:16 2018 -0700 : 25536msg
+f205cf62f4fac5873c77f7355729681d6155d799 - zedin27, Fri Mar 16 16:32:05 2018 -0700 : 25536msg
+fa03d967a72e06230ad70ce27cccdfa291a88638 - zedin27, Fri Mar 16 15:50:14 2018 -0700 : 25536msg
+9eaaf97becc6d15bdeb22faba806b21b91c588f2 - zedin27, Fri Mar 16 15:33:37 2018 -0700 : 25536msg
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/q_/kl4s3bqx1gj3h7gyk4180hdr0000gp/T/tmpc8RAVa/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1491 Mar 16 16:53 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Mar 16 16:53 ft_strcpy
+drwxr-xr-x  3 deepthought  deepthought   102 Mar 16 16:53 ft_strrev
+drwxr-xr-x  3 deepthought  deepthought   102 Mar 16 16:53 maff_revalpha
+drwxr-xr-x  3 deepthought  deepthought   102 Mar 16 16:53 rotone
+
+/var/folders/q_/kl4s3bqx1gj3h7gyk4180hdr0000gp/T/tmpc8RAVa/user/ft_strcpy:
+total 8
+-rw-r--r--  1 deepthought  deepthought  144 Mar 16 16:53 ft_strcpy.c
+
+/var/folders/q_/kl4s3bqx1gj3h7gyk4180hdr0000gp/T/tmpc8RAVa/user/ft_strrev:
+total 8
+-rw-r--r--  1 deepthought  deepthought  237 Mar 16 16:53 ft_strrev.c
+
+/var/folders/q_/kl4s3bqx1gj3h7gyk4180hdr0000gp/T/tmpc8RAVa/user/maff_revalpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  223 Mar 16 16:53 maff_revalpha.c
+
+/var/folders/q_/kl4s3bqx1gj3h7gyk4180hdr0000gp/T/tmpc8RAVa/user/rotone:
+total 8
+-rw-r--r--  1 deepthought  deepthought  499 Mar 16 16:53 rotone.c
+ 
+= ft_strrev ====================================================================
+$> gcc -Wextra -Wall -Werror ft_strrev.c main.c -o user_exe 
+
+Forbidden function call in 'ft_strrev.c': 'write'
+Grade: -42
+
+= Final grade: -42 =============================================================
