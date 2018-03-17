@@ -1,3 +1,5 @@
+/* FAIL */
+
 #include <unistd.h>
 
 void ft_putchar(char c)
@@ -13,14 +15,14 @@ void ft_putstr(char *str)
 
 int		main(int argc, char *argv[])
 {
-	int i = 0;
+	int i = 0;							//<---- Unused variables
 	int j = 0;
 
 	if (argc == 3)
 	{
-		while (argv[2] != '\0')
+		while (argv[2] != '\0')			// <---- missing argument for argv[2][i]
 		{
-			if (argv[1] != '\0')
+			if (argv[1] != '\0')		// <---- missing argument for argv[1][j]
 			{
 				ft_putstr(argv[1]);
 				ft_putchar('\n');

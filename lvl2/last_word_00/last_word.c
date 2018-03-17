@@ -1,3 +1,5 @@
+/* FAIL */
+
 #include <unistd.h>
 
 void	last_word(char *str)
@@ -9,7 +11,7 @@ void	last_word(char *str)
 	j = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] == ' ' && str[i + 1] >= '!' && str[i + 1] <= '\127')
+		if (str[i] == ' ' && str[i + 1] >= '!' && str[i + 1] <= '~') //<--- Missed '\127'
 			j = i + 1;
 		i++;
 	}
