@@ -6,7 +6,7 @@
 /*   By: 42vecmac <42vecmac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/28 17:20:49 by 42vecmac          #+#    #+#             */
-/*   Updated: 2018/03/28 17:43:06 by 42vecmac2        ###   ########.fr       */
+/*   Updated: 2018/03/28 19:42:27 by 42vecmac2        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void 	print_bits(unsigned char octet)
 {
 	unsigned int bit;
-	unsigned int size;
+	int size;
 
 	size = 8;
 	while (size--)
@@ -27,5 +27,5 @@ void 	print_bits(unsigned char octet)
 
 int		main(void)
 {
-	print_bits('a');
+	print_bits('*');
 }
