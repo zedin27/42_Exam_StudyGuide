@@ -1,33 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   maff_revalpha.c                                    :+:      :+:    :+:   */
+/*   aff_first_param.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: 42vecmac <42vecmac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/03/28 15:13:02 by 42vecmac          #+#    #+#             */
-/*   Updated: 2018/03/28 15:13:08 by 42vecmac2        ###   ########.fr       */
+/*   Created: 2018/03/28 15:20:10 by 42vecmac          #+#    #+#             */
+/*   Updated: 2018/03/28 16:37:45 by 42vecmac2        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int		main(void)
+void 	ft_putstr(char *str)
 {
-	char	high;
-	char	low;
-	int		i;
+	int i;
 
-	i = 0;
-	high = 'Y';
-	low = 'z';
-	while (i < 13)
+	i = -1;
+	while (str[++i] != '\0')
+		write(1, &str[i], 1);
+}
+
+int		main(int argc, char *argv[])
+{
+	if (argc > 1)
+		ft_putstr(argv[1]);
+	else if (argc < 1)
 	{
-		write(1, &low, 1);
-		write(1, &high, 1);
-		low -= 2;
-		high -= 2;
-		i++;
+		ft_putstr("\n");
+		return (0);
 	}
-	write(1, "\n", 1);
+	ft_putstr("\n");
+	return (0);
 }
