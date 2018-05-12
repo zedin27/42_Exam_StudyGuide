@@ -1,0 +1,58 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r3p17.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Tue May  1 18:03:29 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/c-exam-alone-in-the-dark-beginner/practice-exam_20180501/ztisnes
+
+= Git history ==================================================================
+$> git -C /var/folders/97/qpsq8lcx3kxdx6wbrznc5n600000gp/T/tmpE3tBeG/user log --pretty='%H - %an, %ad : %s'
+7670b22c10e53b7970052fa6d2eed2bc4ecb2e0e - zedin27, Tue May 1 18:03:22 2018 -0700 : 01
+09b33d8d7c6dfd3e13e4d4bc626817f96cc3b072 - zedin27, Tue May 1 16:08:18 2018 -0700 : 00
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/97/qpsq8lcx3kxdx6wbrznc5n600000gp/T/tmpE3tBeG/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  464 May  1 18:03 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 May  1 18:03 maff_revalpha
+drwxr-xr-x  3 deepthought  deepthought  102 May  1 18:03 repeat_alpha
+
+/var/folders/97/qpsq8lcx3kxdx6wbrznc5n600000gp/T/tmpE3tBeG/user/maff_revalpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  87 May  1 18:03 maff_revalpha.c
+
+/var/folders/97/qpsq8lcx3kxdx6wbrznc5n600000gp/T/tmpE3tBeG/user/repeat_alpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  693 May  1 18:03 repeat_alpha.c
+ 
+= repeat_alpha =================================================================
+$> gcc -Wextra -Wall -Werror repeat_alpha.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./lbormrg605k74kdcnvxgs1kh 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+--- user_output_test1	2018-05-01 18:03:30.000000000 -0700$
++++ test1.output	2018-05-01 18:03:30.000000000 -0700$
+@@ -1 +1 @@$
+-not enough argument$
++$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================
