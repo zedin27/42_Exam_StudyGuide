@@ -1,33 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   maff_revalpha.c                                    :+:      :+:    :+:   */
+/*   print_bits.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: 42vecmac <42vecmac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/03/28 15:13:02 by 42vecmac          #+#    #+#             */
-/*   Updated: 2018/03/28 15:13:08 by 42vecmac2        ###   ########.fr       */
+/*   Created: 2018/03/28 17:20:49 by 42vecmac          #+#    #+#             */
+/*   Updated: 2018/03/28 19:42:27 by 42vecmac2        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
+void 	print_bits(unsigned char octet)
+{
+	unsigned int bit;
+	int size;
+
+	size = 8;
+	while (size--)
+	{
+		bit = (octet>>size & 1) + '0';
+		write(1, &bit, 1);
+	}
+}
+
 int		main(void)
 {
-	char	high;
-	char	low;
-	int		i;
-
-	i = 0;
-	high = 'Y';
-	low = 'z';
-	while (i < 13)
-	{
-		write(1, &low, 1);
-		write(1, &high, 1);
-		low -= 2;
-		high -= 2;
-		i++;
-	}
-	write(1, "\n", 1);
+	print_bits('*');
 }
