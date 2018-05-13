@@ -1,0 +1,78 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r3p2.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Sat May 12 10:47:41 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/c-exam-alone-in-the-dark-beginner/practice-exam_20180512/ztisnes
+
+= Git history ==================================================================
+$> git -C /var/folders/jn/0wvyjwdj6cl2svzzq2k6kw240000gp/T/tmpXxXsgl/user log --pretty='%H - %an, %ad : %s'
+1a4ebf7ec8f3d032df91d66e6eff291d89417216 - zedin27, Sat May 12 10:47:34 2018 -0700 : 00 again
+b4570a3d3c1b8d30fa516773d4ee95e7aedb31ab - zedin27, Sat May 12 10:44:57 2018 -0700 : 00
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/jn/0wvyjwdj6cl2svzzq2k6kw240000gp/T/tmpXxXsgl/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  401 May 12 10:47 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 May 12 10:47 aff_a
+drwxr-xr-x  3 deepthought  deepthought  102 May 12 10:47 aff_z
+
+/var/folders/jn/0wvyjwdj6cl2svzzq2k6kw240000gp/T/tmpXxXsgl/user/aff_a:
+total 8
+-rw-r--r--  1 deepthought  deepthought  61 May 12 10:47 aff_a.c
+
+/var/folders/jn/0wvyjwdj6cl2svzzq2k6kw240000gp/T/tmpXxXsgl/user/aff_z:
+total 8
+-rw-r--r--  1 deepthought  deepthought  61 May 12 10:47 aff_z.c
+ 
+= aff_z ========================================================================
+$> gcc -Wextra -Wall -Werror aff_z.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./3162livfbne29tgv50twtuxp 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./tyh2apwl44cnnwyaeek26kzx "JWQ2" "xSlQ" "iwEeJut" "3GUH" "RyWJMZbrh9cO" "4Tx7SmGdDz01" "R5benMpEAYVHB" "U02IuOcRT" "mDl6Jda5oB" "IS3E90knOVZ5" "wqgRB" "JLaUGoSXKCT5Q7Dw" "CIVU" "GQ53Yu" "VOLFZ" "20hlZ"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./e8t5blwwuq3vf6rt28fodv08 "Dzt"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./pdv9g64wrkrukx9z40q95k03 "9cKzhq04"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./1b21xqatyn18g1h5fq1s0y7k "ZjGtI3UiMdW7H9"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./s2hkucghqey8j9x5q85smyk2 "LDoA4dB7ITH"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

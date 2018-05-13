@@ -1,0 +1,99 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r3p2.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Sat May 12 10:55:58 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/c-exam-alone-in-the-dark-beginner/practice-exam_20180512/ztisnes
+
+= Git history ==================================================================
+$> git -C /var/folders/jn/0wvyjwdj6cl2svzzq2k6kw240000gp/T/tmpFRsDq7/user log --pretty='%H - %an, %ad : %s'
+87e9dc3814d6821587b5bfdd12362919ba669e30 - zedin27, Sat May 12 10:55:47 2018 -0700 : 01
+1a4ebf7ec8f3d032df91d66e6eff291d89417216 - zedin27, Sat May 12 10:47:34 2018 -0700 : 00 again
+b4570a3d3c1b8d30fa516773d4ee95e7aedb31ab - zedin27, Sat May 12 10:44:57 2018 -0700 : 00
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/jn/0wvyjwdj6cl2svzzq2k6kw240000gp/T/tmpFRsDq7/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  609 May 12 10:55 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 May 12 10:55 aff_a
+drwxr-xr-x  3 deepthought  deepthought  102 May 12 10:55 aff_z
+drwxr-xr-x  3 deepthought  deepthought  102 May 12 10:55 ft_swap
+
+/var/folders/jn/0wvyjwdj6cl2svzzq2k6kw240000gp/T/tmpFRsDq7/user/aff_a:
+total 8
+-rw-r--r--  1 deepthought  deepthought  61 May 12 10:55 aff_a.c
+
+/var/folders/jn/0wvyjwdj6cl2svzzq2k6kw240000gp/T/tmpFRsDq7/user/aff_z:
+total 8
+-rw-r--r--  1 deepthought  deepthought  61 May 12 10:55 aff_z.c
+
+/var/folders/jn/0wvyjwdj6cl2svzzq2k6kw240000gp/T/tmpFRsDq7/user/ft_swap:
+total 8
+-rw-r--r--  1 deepthought  deepthought  99 May 12 10:55 ft_swap.c
+ 
+= ft_swap ======================================================================
+$> gcc -Wextra -Wall -Werror ft_swap.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./fh2afj5zwbxqn4wulhntro2b "1714230784" "-1709084392"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./buc2yog3xfl3w3cxx3k5x7s7 "-1682150988" "1038607394"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./gqjuu26eqoel6g344xc36ijn "1369499588" "-481731038"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./1zomdomjz89zofo7my9c2t73 "-1600026243" "-2137892999"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./l74ya31knzzcnvrpimq0d60e "1880894337" "384613883"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./n5c8y6sc3fpv5x8oliw0o45w "716578458" "-145984854"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./ib5xlb6xfd4nhbmscdbsi2qp "1246248715" "510916073"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./n4f0ecr6wksf904bgr5vko4u "-1138226151" "-307081691"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./962hr1b0kd0miftghncxeusd "-857970442" "-972733599"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================
