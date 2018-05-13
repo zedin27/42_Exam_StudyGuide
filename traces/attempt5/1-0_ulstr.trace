@@ -1,0 +1,60 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r1p11.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Sat May 12 16:34:19 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.42.1)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.42.1)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/c-exam-alone-in-the-dark-beginner/practice-exam_20180512/ztisnes2
+
+= Git history ==================================================================
+$> git -C /var/folders/tq/ln84dzlj7cqc4y567m6nyk4w0000gp/T/tmpL0RuwA/user log --pretty='%H - %an, %ad : %s'
+d098807b207e671798e54d471e1c08d5fdfe4a81 - zedin27, Sat May 12 16:34:07 2018 -0700 : 01
+d904ef897b65199d01ec6b73f25ac92770ed59b9 - zedin27, Sat May 12 16:05:58 2018 -0700 : 00
+d14d59bbd77f43705808d3074023c5f0a6405434 - zedin27, Sat May 12 15:10:17 2018 -0700 : 00
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/tq/ln84dzlj7cqc4y567m6nyk4w0000gp/T/tmpL0RuwA/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  683 May 12 16:34 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 May 12 16:34 aff_last_param
+drwxr-xr-x  3 deepthought  deepthought  102 May 12 16:34 ft_print_numbers
+drwxr-xr-x  3 deepthought  deepthought  102 May 12 16:34 ulstr
+
+/var/folders/tq/ln84dzlj7cqc4y567m6nyk4w0000gp/T/tmpL0RuwA/user/aff_last_param:
+total 8
+-rw-r--r--  1 deepthought  deepthought  362 May 12 16:34 aff_last_param.c
+
+/var/folders/tq/ln84dzlj7cqc4y567m6nyk4w0000gp/T/tmpL0RuwA/user/ft_print_numbers:
+total 8
+-rw-r--r--  1 deepthought  deepthought  82 May 12 16:34 ft_print_numbers.c
+
+/var/folders/tq/ln84dzlj7cqc4y567m6nyk4w0000gp/T/tmpL0RuwA/user/ulstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  367 May 12 16:34 ulstr.c
+ 
+= ulstr ========================================================================
+$> gcc -Wextra -Wall -Werror ulstr.c -o user_exe 
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Could not compile 'user_exe'
+Grade: 0
+
+= Final grade: 0 ===============================================================

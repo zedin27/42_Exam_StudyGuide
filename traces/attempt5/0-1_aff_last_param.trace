@@ -1,0 +1,58 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r1p11.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Sat May 12 15:10:27 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.42.1)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.42.1)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/c-exam-alone-in-the-dark-beginner/practice-exam_20180512/ztisnes2
+
+= Git history ==================================================================
+$> git -C /var/folders/tq/ln84dzlj7cqc4y567m6nyk4w0000gp/T/tmp02dATj/user log --pretty='%H - %an, %ad : %s'
+d14d59bbd77f43705808d3074023c5f0a6405434 - zedin27, Sat May 12 15:10:17 2018 -0700 : 00
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/tq/ln84dzlj7cqc4y567m6nyk4w0000gp/T/tmp02dATj/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  240 May 12 15:10 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 May 12 15:10 aff_last_param
+
+/var/folders/tq/ln84dzlj7cqc4y567m6nyk4w0000gp/T/tmp02dATj/user/aff_last_param:
+total 8
+-rw-r--r--  1 deepthought  deepthought  362 May 12 15:10 aff_last_param.c
+ 
+= aff_last_param ===============================================================
+$> gcc -Wextra -Wall -Werror aff_last_param.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./b8l8ke8njs80dr1i6tnajpgu 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./4ij6gprrppw7zjg5w8tjt6hc "pU8B"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+--- user_output_test2	2018-05-12 15:10:29.000000000 -0700$
++++ test2.output	2018-05-12 15:10:28.000000000 -0700$
+@@ -1 +1 @@$
+-pU8B$
+\ No newline at end of file$
++pU8B$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================

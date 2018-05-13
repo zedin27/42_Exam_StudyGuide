@@ -1,3 +1,5 @@
+/* FAIL - NO MAIN */
+
 #include <unistd.h>
 
 void 	ft_putchar(char c)
@@ -7,8 +9,8 @@ void 	ft_putchar(char c)
 
 void 	ulstr(char *str)
 {
-	int i;
-	char letter;
+	int		i;
+	char	letter;
 
 	i = -1;
 	while (str[++i] != '\0')
@@ -32,10 +34,10 @@ void 	ulstr(char *str)
 //I DONT HAVE A COMPILER ATM. But, I can call the function to flip the str
 int main(void)
 {
-  char *str;
+	char *str;
 
-  str = "HelloAsdfFFFx00\n";
-  printf("Before reverse: %s", str);
-  printf("After reverse:\n");
-  ulstr(str);
+	str = "HelloAsdfFFFx00\n";
+	printf("Before reverse: %s", str);
+	printf("After reverse:\n");
+	ulstr(str);
 }
