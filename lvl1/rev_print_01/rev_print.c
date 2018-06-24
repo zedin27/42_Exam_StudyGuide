@@ -7,7 +7,7 @@ void	ft_putchar(int c)
 
 void	reverse(char *str)
 {
-	if(*str)
+	if (*str)
 	{
 		reverse(str + 1);
 		ft_putchar(*str);
