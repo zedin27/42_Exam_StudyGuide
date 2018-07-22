@@ -28,7 +28,7 @@ int		gcd(int num, int den)
 int		main(int argc, char *argv[])
 {
 	if (argc == 3)
-		printf("GCD for %s and %s is %d", argv[1], argv[2], gcd(atoi(argv[1]), atoi(argv[2])));
+		printf("GCD for %s and %s is %d\n", argv[1], argv[2], gcd(atoi(argv[1]), atoi(argv[2])));
 	printf("\n");
 	return (0);
 }
