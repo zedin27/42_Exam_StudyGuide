@@ -1,4 +1,4 @@
-/* FAIL - NO MAIN */
+/* FAIL - DONT SUBMIT WITH MAIN */
 
 #include <unistd.h>
 
