@@ -1,0 +1,106 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z4r6p8.42.us.org
+Darwin 17.5.0 x86_64
+$> date
+Wed Aug  8 14:57:58 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/c-exam-alone-in-the-dark-beginner/practice-exam_20180808/ztisnes
+
+= Git history ==================================================================
+$> git -C /var/folders/xx/wm4gsx_s2_g_jy8wlxbxh0fr0000gp/T/tmpUgLRQt/user log --pretty='%H - %an, %ad : %s'
+0dd4790c1374ddbf382b71e1953739a06c21fde5 - zedin27, Wed Aug 8 14:56:15 2018 -0700 : 02
+b744de5bf4d91bb79289d03652a75f2e1f8dd05a - zedin27, Wed Aug 8 14:34:21 2018 -0700 : 01
+f960ef2794caa645c7a9f3616b1330e0372d9185 - zedin27, Wed Aug 8 11:29:33 2018 -0700 : 01
+f2403484b07cc44234de464a42c9f040f3d2e452 - zedin27, Wed Aug 8 11:29:09 2018 -0700 : 01
+2a6d8354df0cdbb361e351ee982ed2cec0d2a95a - zedin27, Wed Aug 8 11:11:40 2018 -0700 : 00
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/xx/wm4gsx_s2_g_jy8wlxbxh0fr0000gp/T/tmpUgLRQt/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1157 Aug  8 14:57 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Aug  8 14:57 first_word
+drwxr-xr-x  3 deepthought  deepthought   102 Aug  8 14:57 is_power_of_2
+drwxr-xr-x  3 deepthought  deepthought   102 Aug  8 14:57 only_a
+drwxr-xr-x  3 deepthought  deepthought   102 Aug  8 14:57 rotone
+
+/var/folders/xx/wm4gsx_s2_g_jy8wlxbxh0fr0000gp/T/tmpUgLRQt/user/first_word:
+total 8
+-rw-r--r--  1 deepthought  deepthought  389 Aug  8 14:57 first_word.c
+
+/var/folders/xx/wm4gsx_s2_g_jy8wlxbxh0fr0000gp/T/tmpUgLRQt/user/is_power_of_2:
+total 8
+-rw-r--r--  1 deepthought  deepthought  144 Aug  8 14:57 is_power_of_2.c
+
+/var/folders/xx/wm4gsx_s2_g_jy8wlxbxh0fr0000gp/T/tmpUgLRQt/user/only_a:
+total 8
+-rw-r--r--  1 deepthought  deepthought  116 Aug  8 14:57 only_a.c
+
+/var/folders/xx/wm4gsx_s2_g_jy8wlxbxh0fr0000gp/T/tmpUgLRQt/user/rotone:
+total 8
+-rw-r--r--  1 deepthought  deepthought  431 Aug  8 14:57 rotone.c
+ 
+= is_power_of_2 ================================================================
+$> gcc -Wextra -Wall -Werror is_power_of_2.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./r2itmi9jkepew0yu3v7bxb2u 0
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./qi9clo6q9kmqz78e7zngez8c 1
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./gvtcpgmiqhoto0vm3yaedgcz 2
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./gz79hwvhllo9ovtv1fxralnz 3
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./s7x4vmsvzcu1qlr6yeskx63w 4
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./ydtn7czp3wzdg3n4iea040yl 1234
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./pvdhevcigclpw2l4fgp0vl9m 2147483646
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./bsu2qr66tzwkupqctwrwqvjd 2147483648
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./95660d6vu5eevka6dpjltan6 4294967295
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

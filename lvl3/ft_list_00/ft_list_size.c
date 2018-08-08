@@ -16,8 +16,6 @@ int			ft_list_size(t_list *begin_list)
 int		main(void)
 {
 	t_list *node;
-	
 	ft_list_size(node);
-
 	return (0);
 }

@@ -7,7 +7,6 @@ void		rotone(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-
 		if (str[i] >= 'a' && str[i] <= 'y')
 			str[i] += 1;
 		else if (str[i] >= 'A' && str[i] <= 'Y')

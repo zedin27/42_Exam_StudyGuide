@@ -41,6 +41,6 @@ int		main(int ac, char *av[])
 			ft_putchar('\n');
 		}
 	}
-		ft_putchar('\n');
+	ft_putchar('\n');
 	return (0);
 }
