@@ -1,0 +1,47 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r4p7.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Thu Aug  9 14:53:46 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/c-exam-alone-in-the-dark-beginner/practice-exam_20180809/ztisnes
+
+= Git history ==================================================================
+$> git -C /var/folders/dr/q3jl6d4s6tg9nk_670_wlzp00000gp/T/tmpkHMtqE/user log --pretty='%H - %an, %ad : %s'
+45d2d84274d7c5f18f5a11fdac474b44d537b10f - zedin27, Thu Aug 9 14:53:37 2018 -0700 : 00
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/dr/q3jl6d4s6tg9nk_670_wlzp00000gp/T/tmpkHMtqE/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  219 Aug  9 14:53 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Aug  9 14:53 ft_print_numbers
+
+/var/folders/dr/q3jl6d4s6tg9nk_670_wlzp00000gp/T/tmpkHMtqE/user/ft_print_numbers:
+total 8
+-rw-r--r--  1 deepthought  deepthought  92 Aug  9 14:53 ft_print_numbers.c
+ 
+= ft_print_numbers =============================================================
+$> gcc -Wextra -Wall -Werror main.c ft_print_numbers.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./t3d619chm9l6fpdj625sqwr6
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

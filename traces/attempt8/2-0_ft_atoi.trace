@@ -1,0 +1,104 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r2p23.42.us.org
+Darwin 17.4.0 x86_64
+$> date
+Thu Aug  9 17:13:08 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin17.4.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/c-exam-alone-in-the-dark-beginner/practice-exam_20180809/ztisnes
+
+= Git history ==================================================================
+$> git -C /var/folders/1q/vq3hk3b57f325jc2hd77gvy00000gp/T/tmp3BgqCa/user log --pretty='%H - %an, %ad : %s'
+d61eeda8c554a97a719c8f33aefdeefbab8bf78a - zedin27, Thu Aug 9 17:12:48 2018 -0700 : topkek
+1850404865331b38a1ddffbbecd7df2ba9e7538a - zedin27, Thu Aug 9 17:01:05 2018 -0700 : rot
+126bce849bc46440fa721aa3aa64bde30572f6dd - zedin27, Thu Aug 9 16:20:36 2018 -0700 : 01.1
+87aa4c109664d2a0ca7cff0f2bdc9b7441075c97 - zedin27, Thu Aug 9 15:44:43 2018 -0700 : 01
+a244059590f6907ee383d1438151540b1b22fda1 - zedin27, Thu Aug 9 15:44:32 2018 -0700 : 01
+45d2d84274d7c5f18f5a11fdac474b44d537b10f - zedin27, Thu Aug 9 14:53:37 2018 -0700 : 00
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/1q/vq3hk3b57f325jc2hd77gvy00000gp/T/tmp3BgqCa/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1451 Aug  9 17:13 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Aug  9 17:13 first_word
+drwxr-xr-x  3 deepthought  deepthought   102 Aug  9 17:13 ft_atoi
+drwxr-xr-x  3 deepthought  deepthought   102 Aug  9 17:13 ft_print_numbers
+drwxr-xr-x  3 deepthought  deepthought   102 Aug  9 17:13 repeat_alpha
+drwxr-xr-x  3 deepthought  deepthought   102 Aug  9 17:13 rot_13
+
+/var/folders/1q/vq3hk3b57f325jc2hd77gvy00000gp/T/tmp3BgqCa/user/first_word:
+total 8
+-rw-r--r--  1 deepthought  deepthought  391 Aug  9 17:13 first_word.c
+
+/var/folders/1q/vq3hk3b57f325jc2hd77gvy00000gp/T/tmp3BgqCa/user/ft_atoi:
+total 8
+-rw-r--r--  1 deepthought  deepthought  252 Aug  9 17:13 ft_atoi.c
+
+/var/folders/1q/vq3hk3b57f325jc2hd77gvy00000gp/T/tmp3BgqCa/user/ft_print_numbers:
+total 8
+-rw-r--r--  1 deepthought  deepthought  92 Aug  9 17:13 ft_print_numbers.c
+
+/var/folders/1q/vq3hk3b57f325jc2hd77gvy00000gp/T/tmp3BgqCa/user/repeat_alpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  632 Aug  9 17:13 repeat_alpha.c
+
+/var/folders/1q/vq3hk3b57f325jc2hd77gvy00000gp/T/tmp3BgqCa/user/rot_13:
+total 8
+-rw-r--r--  1 deepthought  deepthought  457 Aug  9 17:13 rot_13.c
+ 
+= ft_atoi ======================================================================
+$> gcc -Wextra -Wall -Werror main.c ft_atoi.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./aoww3970r9uj95f0k09hg70q 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./3ttvwdklcvthzbqozcy5e1hl "21" "2313"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./f909iap65ptxjnkspm3g1yqr 2147483647
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./ncdsgowret3nnne2lr11gexd -2147483648
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./lyngrnvx28i3zhnnv3hk4fyc 0
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./cxv9qsx2a2si4r8gwoo7qfmy 12211t11
+$> diff -U 3 user_output_test6 test6.output | cat -e
+--- user_output_test6	2018-08-09 17:13:13.000000000 -0700$
++++ test6.output	2018-08-09 17:13:13.000000000 -0700$
+@@ -1 +1 @@$
+-12217811$
+\ No newline at end of file$
++12211$
+\ No newline at end of file$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================
