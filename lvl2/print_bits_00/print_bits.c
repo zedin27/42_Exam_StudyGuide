@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   print_bits.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: 42vecmac <42vecmac@student.42.us.org>      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/03/28 17:20:49 by 42vecmac          #+#    #+#             */
-/*   Updated: 2018/07/09 20:52:56 by ztisnes          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include <unistd.h>
 
 void 	print_bits(unsigned char octet)
@@ -27,5 +15,5 @@ void 	print_bits(unsigned char octet)
 
 int		main(void)
 {
-	print_bits('*');
+	print_bits('1');
 }
