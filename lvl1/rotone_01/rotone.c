@@ -1,3 +1,5 @@
+//FAIL
+
 #include <unistd.h>
 
 void		rotone(char *str)
