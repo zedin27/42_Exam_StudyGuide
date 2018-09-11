@@ -1,4 +1,4 @@
-/* FAIL */
+/* FAIL  - DON'T USE FORBIDDEN FUNCTIONS*/
 
 #include <unistd.h>
 
