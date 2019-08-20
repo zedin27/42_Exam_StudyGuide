@@ -13,9 +13,9 @@ int			ft_list_size(t_list *begin_list)
 	return (i);
 }
 
-int		main(void)
-{
-	t_list *node;
-	ft_list_size(node);
-	return (0);
-}
+// int		main(void)
+// {
+// 	t_list *node;
+// 	ft_list_size(node);
+// 	return (0);
+// }
