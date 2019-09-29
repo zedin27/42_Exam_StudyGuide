@@ -27,9 +27,9 @@ char	*ft_strpbrk(const char *str, const char *charset)
 #ifdef TEST
 int		main(void)
 {
-	printf("%s\n", strpbrk("hello", "e"));
+	printf("real: %s\n", strpbrk("hello", "e"));
 	//printf("%s\n", strpbrk("hello", "es"));
-	printf("%s\n", ft_strpbrk("hello", "e"));
+	printf("ft: %s\n", ft_strpbrk("hello", "e"));
 }
 
 #endif
