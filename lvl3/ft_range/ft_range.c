@@ -1,6 +1,6 @@
 #include <stdlib.h>
 
-int     *ft_rrange(int start, int end)
+int     *ft_range(int start, int end)
 {
 	int *vals;
 	int i;
@@ -12,13 +12,15 @@ int     *ft_rrange(int start, int end)
 		vals = malloc(sizeof(int) * (end - start) + 1);
 	while (start != end)
 	{
-		vals[i++] = end;
-		end += (start > end) ? 1 : -1;
+		vals[i++] = start;
+		start += (start > end) ? -1 : 1;
 	}
 
-	vals[i] = end;
+	vals[i] = start;
 	return (vals);
 }
+
+#ifdef TEST
 
 #include <stdio.h>
 
@@ -27,7 +29,7 @@ int		main(void)
 	int start = 0;
 	int end = -3;
 
-	int *arr = ft_rrange(start, end);
+	int *arr = ft_range(start, end);
 
 	int i = 0;
 	while (i < 4)
@@ -37,3 +39,5 @@ int		main(void)
 	}
 	printf("\n");
 }
+
+#endif

@@ -19,3 +19,25 @@ int     *ft_rrange(int start, int end)
 	vals[i] = end;
 	return (vals);
 }
+
+#ifdef TEST
+
+#include <stdio.h>
+
+int		main(void)
+{
+	int start = 0;
+	int end = -3;
+
+	int *arr = ft_rrange(start, end);
+
+	int i = 0;
+	while (i < 4)
+	{
+		printf("%d, ", arr[i]);
+		++i;
+	}
+	printf("\n");
+}
+
+#endif
