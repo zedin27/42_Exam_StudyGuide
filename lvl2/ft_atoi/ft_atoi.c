@@ -1,7 +1,5 @@
 #include <stdlib.h>
 
-//Needs to be tested first
-
 int		ft_isspace(char c)
 {
 	if (c == ' ' || c == '\t')
@@ -26,6 +24,13 @@ int		ft_atoi(const char *str)
 	{
 		sign = -1;
 		i++;
+	}
+	while (ft_isspace(str[i]) || (str[i] >= ' ' && str[i] <= '~'))
+	{
+		if (str[i] == '+' || str[i] == '-')
+			i++;
+		else
+			break ;
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
