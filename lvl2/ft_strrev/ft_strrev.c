@@ -1,45 +1,33 @@
-#include <unistd.h>
-
-void	reverse(char *begin, char *end)
+void	ft_swap(char *a, char *b)
 {
-	char temp;
+	char tmp;
 
-	while (begin < end)
-	{
-		temp = *begin;
-		*begin++ = *end;
-		*end-- = temp;
-	}
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
 }
 
-void	ft_strrev(char *str)
+char	*ft_strrev(char *str)
 {
-	char *begin;
-	char *end;
-	char *temp;
+	int left;
+	int right;
 
-	temp = str;
-	begin = str;
-	end = str - 1;
-
-	while (*temp)
-	{
-		temp++;
-		if (*temp == '\0')
-			reverse(begin, temp - 1);
-		else if (*temp == ' ')
-		{
-			reverse(begin, temp - 1);
-			begin = temp + 1;
-		}
-	}
-	reverse(str, temp - 1);
+	right = 0;
+	while (str[right])
+		right++;
+	left = -1;
+	while (++left < --right)
+		ft_swap(&str[left], &str[right]);
+	return (str);
 }
 
-int main(int argc, char *argv[])
+#ifdef TEST
+#include <stdio.h>
+
+int		main(void)
 {
-	if (argc == 2)
-		ft_strrev(argv[1]);
-	write(1, "\n", 1);
-	return (0);
+	char *str = "yolo";
+	printf("%s\n", ft_strrev(str));
 }
+
+#endif
