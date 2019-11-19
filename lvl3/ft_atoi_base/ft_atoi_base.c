@@ -42,7 +42,7 @@ int		ft_atoi_base(const char *str, int base)
 #ifdef TEST
 int	main(void)
 {
-	char test[] = "FF";
+	char test[] = "255";
 	int	base = 16;
 	printf("test: %s\nreal: %d\n", test, ft_atoi_base(test, base));
 }
