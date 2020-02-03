@@ -31,7 +31,6 @@ void	snake_to_camel(char *str)
 	res_ind = 0;
 	for (int i = 0; i < len; i++)
 	{
-
 		if (str[i] == '_')
 		{
 			str[i + 1] = ft_toupper(str[i + 1]);
