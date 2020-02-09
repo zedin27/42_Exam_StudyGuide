@@ -15,7 +15,6 @@ int     *ft_rrange(int start, int end)
 		vals[i++] = end;
 		end += (start > end) ? 1 : -1;
 	}
-
 	vals[i] = end;
 	return (vals);
 }

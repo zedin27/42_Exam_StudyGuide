@@ -8,5 +8,5 @@ int         is_power_of_2(unsigned int n)
 		return (1);
 	else
 		return (0);
-		*/
+	*/
 }
