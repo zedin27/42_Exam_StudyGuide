@@ -6,7 +6,7 @@ void    ft_list_foreach(t_list *begin_list, void (*f)(void *))
 
 	while (head)
 	{
-		(*f)(head->data);
+		f(head->data); //or can be (*f)(head->data);
 		head = head->next;
 	}
 	return ;
