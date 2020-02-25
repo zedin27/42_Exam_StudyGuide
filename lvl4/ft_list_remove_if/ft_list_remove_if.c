@@ -21,7 +21,7 @@ void	ft_list_remove_if(t_list **begin_list, void *data_ref, int (*cmp)())
 	cur = *begin_list;
 	if (cmp(data_ref, cur->data) == 0)
 	{
-		cur = cur->next;
+		*begin_list = cur->next;
 		free(cur);
 	}
 }

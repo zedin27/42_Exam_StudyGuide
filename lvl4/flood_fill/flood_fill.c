@@ -2,7 +2,8 @@
 
 void	fill(char **tab, t_point size, t_point begin, char to_fill)
 {
-	if (begin.y < 0 || begin.y >= size.y || begin.x >= size.x || begin.x < 0 || tab[begin.y][begin.x] != to_fill)
+	if (begin.y < 0 || begin.y >= size.y || begin.x >= size.x || \
+		begin.x < 0 || tab[begin.y][begin.x] != to_fill)
 		return ;
 	tab[begin.y][begin.x] = 'F';
 	fill(tab, size, (t_point){begin.x - 1, begin.y}, to_fill);
