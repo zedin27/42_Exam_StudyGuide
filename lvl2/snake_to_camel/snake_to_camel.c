@@ -30,12 +30,7 @@ void	snake_to_camel(char *str)
 	while (str[i])
 	{
 		if (str[i] == '_')
-		{
 			str[i + 1] = ft_toupper(str[i + 1]);
-			// continue ;
-		}
-		// else
-		// 	str[res_ind++] = str[i];
 		ft_putchar(str[i]);
 		i++;
 	}
