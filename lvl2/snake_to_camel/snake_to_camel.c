@@ -24,21 +24,20 @@ int		ft_strlen(char *str)
 
 void	snake_to_camel(char *str)
 {
-	int len;
-	int res_ind;
+	int i;
 
-	len = ft_strlen(str);
-	res_ind = 0;
-	for (int i = 0; i < len; i++)
+	i = 0;
+	while (str[i])
 	{
 		if (str[i] == '_')
 		{
 			str[i + 1] = ft_toupper(str[i + 1]);
-			continue ;
+			// continue ;
 		}
-		else
-			str[res_ind++] = str[i];
+		// else
+		// 	str[res_ind++] = str[i];
 		ft_putchar(str[i]);
+		i++;
 	}
 }
 
