@@ -22,7 +22,7 @@ void	rotone(char *str)
 
 int		main(int argc, char *argv[])
 {
-	if (argc > 1)
+	if (argc == 2)
 		rotone(argv[1]);
 	write(1, "\n", 1);
 	return (0);
