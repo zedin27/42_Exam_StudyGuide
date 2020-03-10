@@ -12,16 +12,6 @@ int		ft_toupper(int c)
 	return (c);
 }
 
-int		ft_strlen(char *str)
-{
-	int i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
-
 void	snake_to_camel(char *str)
 {
 	int i;
